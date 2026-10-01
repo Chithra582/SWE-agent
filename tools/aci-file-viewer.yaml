@@ -1,0 +1,17 @@
+name: aci-file-viewer
+description: Inspects code files in sliding line windows with line numbers and cursor
+  tracking.
+input_schema:
+  type: object
+  properties:
+    file_path:
+      type: string
+      description: Path to the file to open or inspect.
+    start_line:
+      type: integer
+      description: Starting line number for the sliding window view.
+    window_size:
+      type: integer
+      description: 'Number of lines to display (default: 50).'
+  required:
+  - file_path

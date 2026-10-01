@@ -1,0 +1,24 @@
+spec_version: "0.1.0"
+name: swe-agent
+version: 0.1.0
+description: Autonomous software engineering agent built on custom Agent-Computer Interfaces (ACI) to solve real GitHub issues on SWE-bench.
+license: MIT
+author: Princeton NLP, Chithra582 & OpenGAP Contributors
+
+metadata:
+  domain: Developer Tools / Autonomous Software Engineering & Benchmark Evaluation
+  category: Developer Tools
+
+skills:
+  - aci-code-editor
+  - repository-issue-resolver
+  - swe-bench-evaluator
+  - multilingual-environment-setup
+  - patch-submission-gate
+
+tools:
+  - aci-file-viewer
+  - swe-search-engine
+  - reproduction-script-runner
+  - patch-lint-verifier
+  - swe-benchmark-scorer

@@ -1,0 +1,15 @@
+name: swe-benchmark-scorer
+description: Evaluates patch resolution status against SWE-bench ground truth test
+  suites.
+input_schema:
+  type: object
+  properties:
+    instance_id:
+      type: string
+      description: SWE-bench problem instance identifier (e.g. django__django-11099).
+    prediction_patch:
+      type: string
+      description: Candidate git patch to evaluate.
+  required:
+  - instance_id
+  - prediction_patch

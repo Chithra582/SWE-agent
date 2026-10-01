@@ -1,0 +1,14 @@
+name: reproduction-script-runner
+description: Executes bug reproduction scripts and tracks return codes and assertion
+  states.
+input_schema:
+  type: object
+  properties:
+    script_path:
+      type: string
+      description: Path to the reproduction test script.
+    timeout_seconds:
+      type: integer
+      description: Execution timeout limit in seconds.
+  required:
+  - script_path

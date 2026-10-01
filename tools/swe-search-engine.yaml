@@ -1,0 +1,14 @@
+name: swe-search-engine
+description: Performs regex pattern matching and symbol definitions across the repository
+  tree.
+input_schema:
+  type: object
+  properties:
+    search_term:
+      type: string
+      description: Search pattern or symbol name.
+    file_pattern:
+      type: string
+      description: Optional glob pattern to restrict search files (e.g. *.py).
+  required:
+  - search_term

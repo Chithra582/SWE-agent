@@ -1,0 +1,14 @@
+name: patch-lint-verifier
+description: Runs static analysis and syntax verification on candidate diffs before
+  submission.
+input_schema:
+  type: object
+  properties:
+    patch_content:
+      type: string
+      description: Unified git diff string to lint and verify.
+    language:
+      type: string
+      description: Programming language (python, javascript, c, rust).
+  required:
+  - patch_content
